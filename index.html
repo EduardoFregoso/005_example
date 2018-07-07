@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <div class="container">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#Informática">Informática</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#Matemáticas">Matemáticas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#Química">Química</a>
+            </li>
+          </ul>
+        
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="Informática" class="container tab-pane active">
+                    <div class="container">
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header">
+                                  <a class="card-link" data-toggle="collapse" href="#Word">
+                                    Microsoft Word
+                                  </a>
+                                </div>
+                                <div id="Word" class="collapse show" data-parent="#accordion">
+                                  <div class="card-body">
+                                        Microsoft Word es un programa informático orientado al 
+                                        procesamiento de textos. Fue creado por la empresa Microsoft, 
+                                        y viene integrado predeterminadamente en el paquete ofimático 
+                                        denominado Microsoft Office.
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header">
+                                      <a class="card-link" data-toggle="collapse" href="#Excel">
+                                        Microsoft Excel
+                                      </a>
+                                    </div>
+                                    <div id="Excel" class="collapse" data-parent="#accordion">
+                                      <div class="card-body">
+                                            Microsoft Excel es una aplicación de hojas de cálculo que forma 
+                                            parte de la suite de oficina Microsoft Office. Es una aplicación 
+                                            utilizada en tareas financieras y contables, con fórmulas, gráficos 
+                                            y un lenguaje de programación.
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div id="Matemáticas" class="container tab-pane fade">
+                    <div class="container">
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header">
+                                      <a class="card-link" data-toggle="collapse" href="#Calculadora">
+                                        Calculadora
+                                      </a>
+                                    </div>
+                                    <div id="Calculadora" class="collapse" data-parent="#accordion">
+                                      <div class="card-body">
+                                            <h2>Operacion</h2>
+                                            <fieldset class="form-group">
+                                                    <div class="row ">
+                                                            <div class="col-md-4 mb-6">
+                                                                <div class="form-check">
+                                                                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                                  <label class="form-check-label" for="gridRadios1">
+                                                                   Suma
+                                                                  </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                                  <label class="form-check-label" for="gridRadios2">
+                                                                    Resta
+                                                                  </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                                                    <label class="form-check-label" for="gridRadios3">
+                                                                          Multiplicación
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                            </fieldset>
+                                            <h4>Número 1</h4>
+                                            <div class="form-group row col-sm-6">
+                                                    <div class="col-sm-9">
+                                                        <select id="disabledSelect" class="form-control ">
+                                                        </select>
+                                                    </div>
+                                            </div>
+                                            <h4>Número 2</h4>
+                                            <div class="form-group row col-sm-6">
+                                                    <div class="col-sm-9">
+                                                        <select id="disabledSelect" class="form-control ">
+                                                        </select>
+                                                    </div>
+                                            </div>
+                                            <h1>Resultado</h1>
+                                      </div>
+                                    </div>
+                                    
+                                </div>
+                                <p>Realiza Operaciones matemáticas</p>
+                            </div>
+                            
+                        </div>
+                
+            </div>
+            <div id="Química" class="container tab-pane fade">
+                    <div class="container">
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header">
+                                      <a class="card-link" data-toggle="collapse" href="#Atomo">
+                                        Átomo
+                                      </a>
+                                    </div>
+                                    <div id="Atomo" class="collapse show" data-parent="#accordion">
+                                      <div class="card-body">
+                                            Porción material menor de un elemento químico que interviene 
+                                            en las reacciones químicas y posee las propiedades características 
+                                            de dicho elemento.
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="container">
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header">
+                                      <a class="card-link" data-toggle="collapse" href="#Elemento">
+                                        Elemento
+                                      </a>
+                                    </div>
+                                    <div id="Elemento" class="collapse" data-parent="#accordion">
+                                      <div class="card-body">
+                                            Parte que, junto con otras, constituye la base de una 
+                                            cosa o un conjunto de cosas materiales o inmateriales.
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="container">
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header">
+                                      <a class="card-link" data-toggle="collapse" href="#Compuesto">
+                                        Compuesto
+                                      </a>
+                                    </div>
+                                    <div id="Compuesto" class="collapse" data-parent="#accordion">
+                                      <div class="card-body">
+                                            es una sustancia formada por la combinación de dos o más 
+                                            elementos distintos de la tabla periódica.1​ Los compuestos
+                                             son representados por una fórmula química. Por ejemplo,
+                                              el agua (H2O) está constituida por dos átomos de hidrógeno 
+                                              y uno de oxígeno
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+              
+            </div>
+          </div>
+        </div>
+</body>
+              
+</html>
